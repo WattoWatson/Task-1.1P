@@ -2,7 +2,10 @@
 
 <html>
     <head>
+        <!--CSS styling used to format the img header and the title on the header the appaears when you hover over the img-->
         <style>
+
+            
             .image-container {
                 position: relative;
                 text-align: center;
@@ -34,15 +37,48 @@
         </style>
     </head>
     <body>
+        <!--Horizontal navigation menu-->
+        <nav style="padding: 10PX 0; text-align: center;">
+            <ul>
+                <li style="display: inline;"><a href="#">About</a></li>
+                <li style="display: inline;"><a href="#">Work</a></li>
+                <li style="display: inline;"><a href="#">Contact</a></li>
+           </ul>
+        </nav>
+
+        <!--Header img that says Hi I'm Sam when its hovered over. Chat GPT was used to help me create the opacity effect-->
         <div class="image-container">
         <img src="PersonHeader.jpg" alt="Hi I'm Sam">
         <div class="image-text">Hi, I'm Sam</div>
         </div>
         <div>
             <img src="Blank.png" alt="me" style ="display: block; margin: 20px auto; width: 150px; height: auto;" >
-            <p style="text-align: center;"> I am a sutdying Cmputer Science student.</p>
+            <p style="text-align: center;"> I am a sutdying Computer Science student.</p>
+            <p style="text-align: center;"> Here is my work</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        
+        <!--List of curent projects-->
+        <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin: 20px 0;">
+            <img src="Hockey.jpg" alt="Athlete" style=" width: 150px;">
+            <p\ style="margin: 0;">Working hard as an athlete</p>
+        </div>
+        <br>
+
+        <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+            <img src="Colab.jpg" alt="group" style="width: 150px;">
+            <p style="margin: 0;">Working on group projects as a student</p>
         </div>
 
-
+        <!-- Img gallery. Chat GPT was used to help me neated out the experience and making the images become the same scale-->
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 10px;">
+            <img src="field.jpg" alt="img1" style="width: 100%; max-width: 300px; height: auto; flex: 1 1 300px;">
+            <img src="Deakin.jfif" alt="img2" style="width: 100%; max-width: 300px; height: auto; flex: 1 1 300px;">
+            <img src="stairs.jpg" alt="img3" style="width: 100%; max-width: 300px; height: auto; flex: 1 1 300px;">
+            <img src="mountain.jpg" alt="img4" style="width: 100%; max-width: 300px; height: auto; flex: 1 1 300px;">
+        </div>
+        
     </body>
 </html>
