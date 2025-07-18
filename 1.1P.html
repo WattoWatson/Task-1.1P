@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            .image-container {
+                position: relative;
+                text-align: center;
+                color: white;
+            }
+            .image-container img{
+                width: 100%;
+                height: auto;
+                display: block
+            }
+
+            .image-text{
+                position: absolute;
+                top: 80%; /* vertical center */
+                left: 50%; /* horizontal center */
+                transform: translate(-50%, -50%);
+                font-size: 2em;
+                font-weight: bold;
+                background-color: rgba(0, 0, 0, 0.5); /* optional: adds contrast */
+                padding: 10px;
+                border-radius: 10px;
+                opacity:  0;
+                transition: opacity 0.3s ease;
+            }
+
+            .image-container:hover .image-text{
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="image-container">
+        <img src="PersonHeader.jpg" alt="Hi I'm Sam">
+        <div class="image-text">Hi, I'm Sam</div>
+        </div>
+        <div>
+            <img src="Blank.png" alt="me" style ="display: block; margin: 20px auto; width: 150px; height: auto;" >
+            <p style="text-align: center;"> I am a sutdying Cmputer Science student.</p>
+        </div>
+
+
+    </body>
+</html>
